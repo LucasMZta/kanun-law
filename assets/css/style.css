@@ -1,0 +1,63 @@
+:root {
+    --bg-dourado: #aa9166;
+}
+.bg-black {
+    background-color: #000;
+}
+.text-dourado {
+    color: #FFF;
+}
+.btn-outline-dourado {
+    border-color: var(--bg-dourado);
+    color: #fff;
+    font-weight: 500;
+    border-width: 2px;
+}
+.btn-outline-dourado:hover {
+    background-color: var(--bg-dourado)!important;
+    color: #FFF!important;
+}
+.text-dourado:hover, .text-dourado.active, .text-dourado:focus {
+    color: var(--bg-dourado)!important;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+}
+header .logo-title h1 {
+    color: var(--bg-dourado);
+    font-size: 5rem;
+    font-weight: bold;
+}
+header .header-details {
+    border-left: 1px solid #555;
+}
+header .header-details:last-child {
+    border-right: 1px solid #555;
+}
+header .header-details h4 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+header .header-details span {
+    font-size: 0.80rem;
+}
+header .header-details i {
+    font-size: 1.5rem;
+}
+header .header-details a {
+    color: #FFF;
+    transition: all .4s linear;
+}
+header .header-details a:hover {
+    background-color: #FFF;
+    color: var(--bg-dourado);
+}
+.carousel {
+    height: calc(100vh - 168px);
+}
