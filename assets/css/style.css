@@ -58,6 +58,12 @@ header .header-details a:hover {
     background-color: #FFF;
     color: var(--bg-dourado);
 }
+header .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;    
+}
 .carousel {
     height: calc(100vh - 168px);
 }
