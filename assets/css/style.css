@@ -67,3 +67,11 @@ header .sticky {
 .carousel {
     height: calc(100vh - 168px);
 }
+.carousel-item  h5 {
+    font-weight: bold;
+    font-size: 4rem;
+}
+.carousel-item p {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
