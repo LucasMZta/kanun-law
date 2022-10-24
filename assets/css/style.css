@@ -373,8 +373,16 @@ footer .copy a {
 }
 
 
-@media(max-width: 760px) {
+@media(max-width: 770px) {
     html {
         font-size: 15px;
+    }
+    .btn-dourado {
+        font-size: 1rem;
+    }
+}
+@media(max-width: 576px) {
+    html {
+        font-size: 12px;
     }
 }
