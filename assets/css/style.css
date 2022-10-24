@@ -377,6 +377,15 @@ footer .copy a {
     html {
         font-size: 15px;
     }
+    header nav .nav-item {
+        font-size: 0.85rem;
+    }
+    .carousel-item h5 {
+        font-size: 3.5rem;
+    }
+    .carousel-item p {
+        font-size: 1.3rem;
+    }
     .btn-dourado {
         font-size: 1rem;
     }
@@ -384,5 +393,19 @@ footer .copy a {
 @media(max-width: 576px) {
     html {
         font-size: 12px;
+    }
+    .title-line {
+        font-size: 2.1rem;
+    }
+    .title-line::before,
+    .subscribe-area .title-line::before {
+        border-bottom: none;
+    }
+    .title-line::after,
+    .subscribe-area .title-line::after {
+        border-top: none;
+    }
+    .subscribe-area {
+        margin-top: 2rem;
     }
 }
