@@ -394,6 +394,9 @@ footer .copy a {
     html {
         font-size: 12px;
     }
+    header nav .nav-item {
+        font-size: 0.9rem;
+    }
     .title-line {
         font-size: 2.1rem;
     }
