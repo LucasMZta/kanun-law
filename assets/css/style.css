@@ -1,11 +1,51 @@
 :root {
     --bg-dourado: #aa9166;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .bg-black {
     background-color: #000;
 }
 .text-dourado {
     color: #FFF;
+}
+.title-line {
+    font-weight: bold;
+    font-size: 3rem;
+    position: relative;
+}
+.title-line::before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: 0px;
+    width: 100%;
+    border-top: 1px solid var(--bg-dourado);
+    border-bottom: 1px solid var(--bg-dourado);
+    padding: 3.2px;
+    z-index: -1;
+}
+.title-line::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 0px;
+    width: 100%;
+    border-top: 1px solid var(--bg-dourado);
+    border-bottom: 1px solid var(--bg-dourado);
+    padding: 3.2px;
+    z-index: -1;
+}
+.btn-dourado {
+    background-color: #121518;
+    border-color: var(--bg-dourado);
+    color: var(--bg-dourado);
+    font-weight: 600;
+}
+.btn-dourado:hover {
+    background-color: var(--bg-dourado)!important;
+    color: #121518!important;
 }
 .btn-outline-dourado {
     border-color: var(--bg-dourado);
@@ -39,7 +79,6 @@ header .header-details:last-child {
     border-right: 1px solid #555;
 }
 header .header-details h4 {
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 1.5rem;
@@ -64,6 +103,9 @@ header .sticky {
     width: 100%;
     z-index: 9999;    
 }
+header nav .nav-item {
+    font-size: 0.95rem;
+}
 .carousel {
     height: calc(100vh - 168px);
 }
@@ -72,6 +114,267 @@ header .sticky {
     font-size: 4rem;
 }
 .carousel-item p {
+    font-weight: 500;
+    font-size: 1.45rem;
+}
+.attributes {
+    background-color: #121518;
+}
+.attributes .row > div:not(:last-child) {
+    border-right: 1px solid #555;
+}
+.attributes i {
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    color: var(--bg-dourado);
+}
+.attributes h5 {
+    font-size: 2rem;
     font-weight: 600;
+    color: #FFF;
+}
+.attributes p {
+    color: #999;
+    font-size: 1.1rem;
+}
+.about-us .about-img,
+.questions .question-img {
+    position: relative;
+    background-color: #121518;
+}
+.about-us .about-img img,
+.questions .question-img img {
+    vertical-align: middle;
+}
+.about-us p {
+    color: #555;
+}
+.about-us button {
+    font-size: 1rem;
+}
+.practice-areas .area-icon {
+    background-color: #000;
+}
+.practice-areas .area-icon i {
+    font-size: 3.7rem;
+    color: var(--bg-dourado);
+    background-color: #121518;
+    padding: 1.3rem;
+    transition: 0.5s;
+}
+.practice-areas .area-content {
+    background-color: #121518;
+    color: #999;
+}
+.practice-areas .area-content p {
+    font-size: 1.1rem;
+}
+.practice-areas .area-content h5 {
+    color: var(--bg-dourado);
+    font-weight: 600;
+    font-size: 1.9rem;
+    padding: 1rem 0;
+}
+.practice-areas .area-content button {
+    font-size: 0.9rem;
+}
+.practice-areas .practice-item:hover .btn-dourado {
+    background-color: var(--bg-dourado)!important;
+    color: #FFF!important;
+}
+.practice-areas .practice-item:hover .area-icon i {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+.about-us .about-icon {
+    background-color: #121518;
+}
+.about-us .about-icon i {
+    font-size: 3.7rem;
+    color: var(--bg-dourado);
+    background-color: #000;
+    padding: 1.3rem;
+    transition: 0.5s;
+}
+.about-us .about-content h5 {
+    font-weight: 600;
+    font-size: 1.7rem;
+    position: relative;
+}
+.about-us .about-content h5::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 3rem;
+    border: 1px solid var(--bg-dourado);
+}
+.about-us .about-area .row:hover i  {
+    margin-right: -1rem;
+    margin-left: 1rem;
+}
+.attorneys .attorneys-content h5 {
+    color: var(--bg-dourado);
+    font-size: 1.4rem;
+}
+.attorneys .attorneys-content p {
+    color: #999;
+}
+.attorneys .attorneys-content {
+    background-color: #121518;
+}
+.attorneys .attorneys-social-media {
+    background-color: var(--bg-dourado);
+    margin: 0 2rem;
+    margin-top: -1.5rem;
+    position: relative;
+    transition: 0.5s;
+}
+.attorneys .attorneys-social-media a {
+    color: #000;
+    font-size: 1.2rem;
+    padding: 0 0.4rem;
+    transition: 0.5s;
+}
+.attorneys .attorneys-social-media a:hover {
+    color: #FFF;
+}
+
+.attorneys .attorneys-area:hover .attorneys-social-media {
+    margin-left: 0;
+    margin-right: 0;
+}
+.questions .card {
+    border: none;
+    border-color: var(--bg-dourado);
+    border-top: 1px solid var(--bg-dourado);
+}
+.questions .card:last-child {
+    border-bottom: 1px solid var(--bg-dourado);
+}
+.questions .card-header {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    padding-left: 0;
+}
+.questions .card-header .card-header-num {
+    color: var(--bg-dourado);
+    font-weight: bold;
+    background-color: #121518;
+    width: 2.65rem;
+    height: 2.35rem;
+    font-size: 1.4rem;
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+.questions .card-header [aria-expanded=false]::after {
+    content:'+';
+    font-size: 1.2rem;
+    float: right;  
+}
+.questions .card-header [aria-expanded=true]::after {
+    content:'-';
+    margin-bottom: 0.3rem;
+    font-size: 1.75rem;
+    float: right;  
+}
+.questions .card-header button {
+    font-size: 1.2rem;
+}
+.questions .card-body {
+    color: #555;
+}
+.subscribe-area {
+    background-color: var(--bg-dourado);
+    position: relative;
+    margin-bottom: -5.5rem;
+}
+.subscribe-area .title-line {
+    z-index: 1;
+}
+.subscribe-area .title-line::before, 
+.subscribe-area .title-line::after {
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+.subscribe-area div {
+    min-width: 17.1875rem;
+}
+.subscribe-area button {
+    position: absolute;
+    right: 0;
+}
+footer {
+    background-color: #121518;
+    color: #999;
+}
+footer .container-fluid {
+    padding-top: 6rem;
+}
+footer h5 {
+    color: var(--bg-dourado);
     font-size: 1.5rem;
+    font-weight: bold;
+}
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer .social-media a {
+    color: var(--bg-dourado);
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    transition: 0.5s;
+}
+footer .social-media a:hover {
+    color: inherit;
+}
+footer .list-footer a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-bottom: 0.5rem;
+}
+footer .list-footer a::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: inherit;
+}
+footer .list-footer li:hover > a {
+    letter-spacing: 1.5px;
+    color: var(--bg-dourado);
+}
+footer .use-terms {
+    background-color: #000;
+}
+footer .use-terms div {
+    flex-wrap: wrap;
+}
+footer .use-terms a {
+    text-decoration: none;
+    color: #999;
+    display: inline-block;
+    margin: 1rem 0;
+}
+footer .use-terms a:not(:last-child) {
+    border-right: 1px solid #999;
+    /* margin-right: 1rem; */
+}
+footer .use-terms a:hover {
+    color: var(--bg-dourado);
+}
+footer .copy a {
+    text-decoration: none;
+    color: var(--bg-dourado);
+    font-weight: 600;
+}
+
+
+@media(max-width: 760px) {
+    html {
+        font-size: 15px;
+    }
 }
